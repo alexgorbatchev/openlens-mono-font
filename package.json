@@ -1,0 +1,43 @@
+{
+  "name": "openlens-mono-font",
+  "version": "1.0.0",
+  "author": "Alex Gorbatchev <alex.gorbatchev@gmail.com>",
+  "description": "OpenLens extension to change the default font to a monospace font",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexgorbatchev/openlens-mono-font.git"
+  },
+  "engines": {
+    "lens": "^6.3.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "renderer": "dist/renderer.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "npm run clean && webpack",
+    "clean": "rm -rf ./dist"
+  },
+  "devDependencies": {
+    "@k8slens/extensions": "^6.5.2",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.13",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/alexgorbatchev/openlens-mono-font",
+  "bugs": {
+    "url": "https://github.com/alexgorbatchev/openlens-mono-font/issues"
+  },
+  "keywords": [
+    "extension",
+    "k8slens",
+    "lens",
+    "openlens",
+    "font",
+    "monospace"
+  ]
+}
